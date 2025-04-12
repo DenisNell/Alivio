@@ -173,3 +173,86 @@ a {
   text-align: center;
   color: #fff;
 }
+
+/* How it works */
+.label {}
+
+.HowItWork {
+  padding-top: 169px;
+  font-family: var(--font-family);
+font-weight: 600;
+font-size: 24px;
+line-height: 157%;
+color: #424242;
+}
+
+.HowItWork_h4 {
+  padding-top: 15px;
+}
+
+.HowItWork_TopBoxFlex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.HowItWork_Title {
+  max-width: 584px;
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 157%;
+  color: #01996d;
+}
+
+.HowItWork_text {
+  max-width: 671px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #424242;
+}
+
+.HowItWork_BoxCardsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  
+}
+
+.HowItWork_Card {}
+
+.Card2{
+  padding-top: 200px;
+}
+.Card3{
+  padding-top: 30px;
+}
+
+.HowItWork_CardNumber {
+  /* justify-self: start; */
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 150px;
+  line-height: 150%;
+  color: rgba(1, 153, 109, 0.2);
+  position: relative;
+}
+
+.HowItWork_CardTitle {
+  position: absolute; 
+  top: 135px;
+  right: 85px;
+  left: 0;
+}
+.title2{
+  right: 0;
+}
+.title3{
+  right: 100px;
+}
+
+.HowItWork_text{
+
+}
+
+.HowItWork_picture {}
