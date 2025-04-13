@@ -86,8 +86,6 @@ a {
   padding-top: 25px;
 }
 
-.header_logo {}
-
 .header_menu {
   display: flex;
   justify-self: center;
@@ -180,10 +178,10 @@ a {
 .HowItWork {
   padding-top: 169px;
   font-family: var(--font-family);
-font-weight: 600;
-font-size: 24px;
-line-height: 157%;
-color: #424242;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 157%;
+  color: #424242;
 }
 
 .HowItWork_h4 {
@@ -211,20 +209,21 @@ color: #424242;
   font-size: 20px;
   line-height: 150%;
   color: #424242;
+  padding-top: 20px;
 }
 
 .HowItWork_BoxCardsGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  
+  margin-bottom: 50px;
 }
 
-.HowItWork_Card {}
 
-.Card2{
+.Card2 {
   padding-top: 200px;
 }
-.Card3{
+
+.Card3 {
   padding-top: 30px;
 }
 
@@ -239,20 +238,272 @@ color: #424242;
 }
 
 .HowItWork_CardTitle {
-  position: absolute; 
+  position: absolute;
   top: 135px;
   right: 85px;
   left: 0;
 }
-.title2{
+
+.title2 {
   right: 0;
 }
-.title3{
+
+.title3 {
   right: 100px;
 }
 
-.HowItWork_text{
+.HowItWork_text {
+  max-width: 382px;
+  margin-bottom: 60px;
 
 }
 
-.HowItWork_picture {}
+
+/* Let's hear about Kayla's success story */
+.label {}
+
+.LetsHearAbout {
+  min-height: 922px;
+  background-color: #245852;
+}
+
+.LetsHearAbout_BoxFlex {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-top: 229px;
+}
+
+.LetsHearAbout_Info {
+  padding-top: 70px;
+}
+
+.LetsHearAbout_TitleInfo {
+  max-width: 580px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.LetsHearAbout_TextInfo {
+  max-width: 550px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 157%;
+  color: #fff;
+  margin-bottom: 70px;
+}
+
+.LetsHearAbout_ButtonInfo {
+  border-radius: 4px;
+  padding: 20px 50px;
+  width: 245px;
+  height: 65px;
+  background: #01996d;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 125%;
+  color: #fff;
+}
+
+.LetsHearAbout_video-container {
+  position: relative;
+  max-width: 895px;
+  margin: 0 auto;
+}
+
+.LetsHearAbout_Video {
+  background-image: url(img/video.png);
+  background-size: cover;
+  background-position: center;
+  display: block;
+  min-height: 515px;
+  width: 100%;
+}
+
+.LetsHearAbout_ButtonVideo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 80px;
+  height: 80px;
+  background-image: url(img/play2.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80px 80px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.LetsHearAbout_ButtonVideo:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* Our product */
+.OurProduct {
+  min-height: 768px;
+  padding-top: 120px;
+  margin-bottom: 168px;
+}
+
+.OurProduct_BoxFlex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.OurProduct_BoxImage {
+  border-radius: 4px;
+  width: 296px;
+  height: 293px;
+  position: relative;
+}
+
+/* Mini Card*/
+.OurProduct_BoxImageCard {
+  border-radius: 4px;
+  width: 296px;
+  height: 293px;
+  background: #fff;
+  box-shadow: 0 4px 18px 0 rgba(165, 165, 165, 0.25);
+  position: relative;
+  top: 350px;
+  z-index: 1;
+}
+
+.OurProduct_ImageTitle {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 157%;
+  text-align: center;
+  color: #000;
+  padding-top: 22px;
+}
+
+.OurProduct_ImageLine {
+  width: 110px;
+  height: 1px;
+  background-color: #000;
+  margin: 0 auto;
+  margin-bottom: 13px;
+}
+
+.OurProduct_ImageMini {
+  border-radius: 100%;
+  background: rgba(1, 153, 109, 0.2);
+  display: block;
+  margin: 0 auto;
+
+}
+
+.OurProduct_ImageName {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 157%;
+  text-align: center;
+  color: #000;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+.OurProduct_ImageBoxTextMini {
+  padding-left: 60px;
+}
+
+.OurProduct_ImageTextMini1 {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 157%;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.OurProduct_ImageTextMini2,
+.OurProduct_ImageTextMini3 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 157%;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+/* End Mini Card */
+
+.OurProduct_ImageBG {
+  border-radius: 18px;
+  width: 638px;
+  height: 573px;
+  background: rgba(1, 153, 109, 0.2);
+  position: absolute;
+  top: 0;
+  left: 25%;
+}
+
+.OurProduct_Image {
+  display: block;
+  justify-self: center;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.OurProduct_BoxInfo {
+  max-width: 584px;
+}
+
+.OurProduct_TextTop {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 157%;
+  color: #424242;
+}
+
+.OurProduct_Title {}
+
+
+.OurProduct_Text {
+  margin-bottom: 60px;
+}
+
+.OurProduct_button {
+  border-radius: 4px;
+  padding: 20px 50px;
+  width: 227px;
+  height: 65px;
+  background: #01996d;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 125%;
+  color: #fff;
+}
+
+/* footer */
+.footer {
+  height: 654px;
+  background: #245852;
+}
+
+.footer_Img {
+  padding-top: 100px;
+  margin-bottom: 60px;
+}
+.footer_nav{
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.footer_link {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 25px;
+  color: #fff;  
+}
