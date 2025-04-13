@@ -69,7 +69,8 @@ li {
   text-align: center;
   color: var(--emerald);
 }
-.button_hover:hover{
+
+.button_hover:hover {
   background-color: #245852;
 }
 
@@ -104,9 +105,10 @@ a {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 20px;
-  color: var(--gray);  
+  color: var(--gray);
 }
-.header_navLink:hover{
+
+.header_navLink:hover {
   padding-bottom: 10px;
   border-bottom: #01996d solid 3px;
 }
@@ -120,9 +122,10 @@ a {
   font-weight: 400;
   font-size: 20px;
   color: var(--gray);
-  margin-right: 25px;
+  margin-right: 20px;
 }
-.button_BoxSign:hover{
+
+.button_BoxSign:hover {
   padding-bottom: 10px;
   border-bottom: var(--green) solid 3px;
 }
@@ -227,6 +230,7 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-bottom: 50px;
+  gap: 15px;
 }
 
 .Card2 {
@@ -266,6 +270,10 @@ a {
   max-width: 382px;
   margin-bottom: 60px;
 }
+.HowItWork_picture{
+  display: block;
+  width: 100%;
+}
 
 /* Let's hear about Kayla's success story */
 .label {}
@@ -280,7 +288,8 @@ a {
   justify-content: space-between;
   max-width: 1600px;
   margin: 0 auto;
-  padding-top: 229px;
+  padding: 229px 15px;
+  gap: 15px;
 }
 
 .LetsHearAbout_Info {
@@ -329,6 +338,7 @@ a {
   display: block;
   min-height: 515px;
   width: 100%;
+  border-radius: 20px;
 }
 
 .LetsHearAbout_ButtonVideo {
@@ -352,7 +362,7 @@ a {
 }
 
 /* Our product */
-.label{}
+.label {}
 
 .OurProduct {
   min-height: 768px;
@@ -366,21 +376,40 @@ a {
 }
 
 .OurProduct_BoxImage {
-  border-radius: 4px;
-  width: 296px;
-  height: 293px;
   position: relative;
+  max-width: 638px;
+  width: 100%;
+  min-height: 573px;
+}
+
+.OurProduct_ImageBG {
+  border-radius: 18px;
+  max-width: 638px;
+  width: 100%;
+  background-color: rgba(1, 153, 109, 0.2);
+  position: absolute;
+  left: 10%;
+}
+
+.OurProduct_Image {
+  display: block;
+  max-width: 429px;
+  width: 100%;
+  justify-self: center;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* Mini Card*/
 .OurProduct_BoxImageCard {
   border-radius: 4px;
-  width: 296px;
+  max-width: 296px;
+  width: 100%;
   height: 293px;
   background: var(--white);
   box-shadow: 0 4px 18px 0 rgba(165, 165, 165, 0.25);
-  position: relative;
-  top: 350px;
+  position: absolute;
+  top: 60%;
   z-index: 1;
 }
 
@@ -407,7 +436,6 @@ a {
   background: rgba(1, 153, 109, 0.2);
   display: block;
   margin: 0 auto;
-
 }
 
 .OurProduct_ImageName {
@@ -445,23 +473,6 @@ a {
 }
 /* End Mini Card */
 
-.OurProduct_ImageBG {
-  border-radius: 18px;
-  width: 638px;
-  height: 573px;
-  background: rgba(1, 153, 109, 0.2);
-  position: absolute;
-  top: 0;
-  left: 25%;
-}
-
-.OurProduct_Image {
-  display: block;
-  justify-self: center;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .OurProduct_BoxInfo {
   max-width: 584px;
 }
@@ -492,7 +503,7 @@ a {
 }
 
 /* footer */
-.label{}
+.label {}
 
 .footer {
   height: 654px;
@@ -503,18 +514,126 @@ a {
   padding-top: 100px;
   margin-bottom: 60px;
 }
-.footer_nav{
+
+.footer_nav {
   display: flex;
   flex-direction: column;
   gap: 60px;
 }
+
 .footer_link {
   font-family: var(--font-family);
   font-weight: 600;
   font-size: 25px;
-  color: var(--white);  
+  color: var(--white);
 }
-.footer_link:hover{
+
+.footer_link:hover {
   padding-bottom: 10px;
   border-bottom: var(--white) solid 3px;
+}
+
+@media screen and (max-width:1400px) {
+  .header_top,
+  .header_LeftInfoBlock,
+  .footer,
+  .HowItWork,
+  .OurProduct_BoxFlex,
+  .LetsHearAbout_video-container,
+  .LetsHearAbout_Info {
+    padding: 0 15px;
+  }
+
+  .OurProduct_BoxFlex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .OurProduct_ImageBG {
+    margin-bottom: 20px;
+  }
+
+  .OurProduct_BoxInfo {
+    padding-top: 200px;
+    margin: 0 auto;
+  }
+
+  .LetsHearAbout_BoxFlex {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 50px 0;
+  }
+}
+
+@media screen and (max-width:1280px) {
+  .HowItWork_BoxCardsGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .header_topGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 25px;
+  }
+
+  .header_topGrid {
+    margin-bottom: 25px;
+  }
+
+  .header_TopButtonBox {
+    margin: 0 auto;
+  }
+
+  .HowItWork_h4 {
+    text-align: center;
+  }
+
+  .HowItWork_TopBoxFlex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer_Img {
+    display: block;
+    margin: 60px auto;
+  }
+
+  .footer_nav {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .header_menu{
+    gap: 25px;
+  }
+  .OurProduct_BoxFlex {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .OurProduct_BoxImage{
+    position: static;
+    display: block;
+    width: 100%;
+  }
+  .OurProduct_ImageBG{
+    position: static;
+  }
+  .OurProduct_BoxImageCard{
+    position: static;
+    margin: 0 auto;
+  }
+  .OurProduct_BoxInfo{
+    padding-top: 50px;
+  }
+}
+@media screen and (max-width:450px){
+  .header_menu{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
