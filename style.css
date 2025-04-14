@@ -651,6 +651,11 @@ a {
     padding-top: 50px;
   }
 }
+@media (max-width: 767px) {
+  .LetsHearAbout_ButtonVideo {
+      display: none !important;
+  }
+}
 @media screen and (max-width:450px){
   .header_menu{
     flex-wrap: wrap;
