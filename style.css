@@ -650,6 +650,9 @@ a {
   .OurProduct_BoxInfo{
     padding-top: 50px;
   }
+  .LetsHearAbout_ButtonVideo {
+    display: none !important;
+  }
 }
 
 @media screen and (max-width:450px){
