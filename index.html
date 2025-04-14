@@ -153,12 +153,11 @@
             if (video && playButton) {
                 // Клик по кнопке → запуск видео
                 playButton.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    video.muted = true; // Важно для мобильных!
-                    video.play()
-                        .then(() => video.classList.add('playing'))
-                        .catch(err => console.log("Ошибка воспроизведения:", err));
+                    e.preventDefault(); // Отменяем переход по "#" (если href остался)
+                    video.play(); // Запускаем видео
+                    video.classList.add('playing'); // Добавляем класс, чтобы скрыть кнопку
                 });
+
 
                 // События видео: скрываем/показываем кнопку
                 video.addEventListener('play', function () {
