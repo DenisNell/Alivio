@@ -653,7 +653,7 @@ a {
 }
 @media (max-width: 767px) {
   .LetsHearAbout_ButtonVideo {
-      display: none !important;
+    background-image: none;
   }
 }
 @media screen and (max-width:450px){
