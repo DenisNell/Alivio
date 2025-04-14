@@ -347,7 +347,7 @@ a {
 
 .LetsHearAbout_ButtonVideo {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: block;
@@ -651,11 +651,7 @@ a {
     padding-top: 50px;
   }
 }
-@media (max-width: 767px) {
-  .LetsHearAbout_ButtonVideo {
-    background-image: none;
-  }
-}
+
 @media screen and (max-width:450px){
   .header_menu{
     flex-wrap: wrap;
