@@ -543,6 +543,9 @@ a {
   .LetsHearAbout_Info {
     padding: 0 15px;
   }
+  .HowItWork_h4 {
+    padding-top: 25px;
+  }
 
   .OurProduct_BoxFlex {
     flex-direction: column;
@@ -564,6 +567,10 @@ a {
     gap: 50px;
     padding: 50px 0;
   }
+  .footer_Info{
+    max-width: 584px;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width:1280px) {
@@ -579,7 +586,7 @@ a {
     justify-content: space-around;
     gap: 25px;
   }
-
+  
   .header_topGrid {
     margin-bottom: 25px;
   }
@@ -599,11 +606,7 @@ a {
 
   .footer_Img {
     display: block;
-    margin: 60px auto;
-  }
-
-  .footer_nav {
-    align-items: center;
+    margin-bottom: 60px;;
   }
 }
 
