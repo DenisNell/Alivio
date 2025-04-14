@@ -83,10 +83,10 @@
                 <a class="LetsHearAbout_ButtonInfo" href="#">Let`s get started</a>
             </div>
             <div class="LetsHearAbout_video-container">
-                <video class="LetsHearAbout_Video" src="">
-                    
+                <video class="LetsHearAbout_Video" controls poster="img/video.png">
+                    <source src="media/promo-video.mp4" type="video/mp4">
                 </video>
-                <a class="LetsHearAbout_ButtonVideo" href=""></a>
+                <a class="LetsHearAbout_ButtonVideo"></a>
             </div>
         </div>
     </section>
@@ -134,6 +134,33 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const video = document.querySelector('.LetsHearAbout_Video');
+    const playButton = document.querySelector('.LetsHearAbout_ButtonVideo');
 
+    if (video && playButton) {
+        // Клик по кнопке → запуск видео
+        playButton.addEventListener('click', function(e) {
+            e.preventDefault(); // Отменяем переход по "#" (если href остался)
+            video.play(); // Запускаем видео
+            video.classList.add('playing'); // Добавляем класс, чтобы скрыть кнопку
+        });
+
+        // События видео: скрываем/показываем кнопку
+        video.addEventListener('play', function() {
+            this.classList.add('playing');
+        });
+
+        video.addEventListener('pause', function() {
+            this.classList.remove('playing');
+        });
+
+        video.addEventListener('ended', function() {
+            this.classList.remove('playing');
+        });
+    }
+});
+    </script>
 </body>
 </html>
